@@ -114,7 +114,7 @@
       .logo {
         height: 75px;
       }
-      .video {
+      .videobox {
         background: linear-gradient(
             to top,
             rgba(0, 0, 0, 0) 0%,
@@ -148,24 +148,68 @@
         box-shadow: 2px 2px;
       }
       .pay {
-        height: 250px;
-        text-align: left;
+        background-color: #e0bb41;
+        height: 70px;
+        text-align: center;
+        padding: 20px;
       }
       .pay-image {
         height: 75px;
       }
       .pay-imagebox {
-        /* position: relative;
-        left: -15%; */
+        vertical-align: middle;
       }
       .pay-text {
         color: black;
         vertical-align: top;
-        width: 200px;
+        width: 250px;
         display: inline-block;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 15px;
         /* top: -20%;
         position: relative;
         left: 15%; */
+      }
+      .review {
+        background-color: white;
+        height: 70px;
+        text-align: center;
+        padding: 20px;
+      }
+      .review-text {
+        color: black;
+        width: 250px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: left;
+        vertical-align: middle;
+
+        /* top: -20%;
+        position: relative;
+        left: 15%; */
+      }
+      .review-box {
+        width: 100px;
+        color: black;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .free-button {
+        background-color: #e0bb41; /* Green */
+        border: 2px solid black;
+        border-radius: 25px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        box-shadow: 2px 2px;
+        position: relative;
+      }
+      .footer {
+        color: black;
       }
     </style>
 
@@ -173,7 +217,7 @@
   </head>
 
   <body>
-    <div class="video">
+    <div class="videobox">
       <div class="video-text">
         Fundraise for your favorite causes by <b>hiring local skills</b>.
       </div>
@@ -211,6 +255,31 @@
           </span>
         </span>
       </div>
+    </div>
+    <div class="pay">
+      <span class="pay-imagebox">
+        <img class="pay-image" src="images/pound_british_gbp-512.png" />
+        <img class="pay-image" src="images/new white bg TRJFP.PNG.png" />
+      </span>
+      <span class="pay-text">
+        <b>PAY.<br /></b>YOUR MONEY GOES TO THE REAL JUNK FOOD PROJECT <br /><i
+          style="font-size: 14px"
+          >(we will support other causes soon)</i
+        >
+      </span>
+    </div>
+    <div class="review">
+      <span class="review-text">
+        <b>RECIEVE<br /></b>SKILL AND LEAVE A REVIEW
+      </span>
+      <span class="review-box">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i
+        ><i class="fas fa-star"></i><i class="fas fa-star"></i
+        ><i class="fas fa-star"></i>
+
+        <br />
+        "Excellently Done!"
+      </span>
     </div>
     <div class="counter-section">
       <h1 style="text-align: center">What we've achieved so far...</h1>
@@ -263,17 +332,22 @@
       </div>
       <br />
     </div>
-    <div class="pay">
-      <span class="pay-imagebox">
-        <img class="pay-image" src="images/pound_british_gbp-512.png" />
-        <img class="pay-image" src="images/new white bg TRJFP.PNG.png" />
-      </span>
-      <span class="pay-text">
-        <b>PAY.</b>YOUR MONEY GOES TO THE REAL JUNK FOOD PROJECT <br /><i
-          >(we will support other causes soon)</i
-        >
-      </span>
+    <div class="button-section">
+      <button class="free-button" style="left: -15%">
+        <b>Find</b> a skill
+      </button>
+      <button class="free-button" style="left: 15%">
+        <b>Volunteer</b> a skill
+      </button>
     </div>
+    <div class="footer">
+      <img
+        src="images/divider-3166173__340.png"
+        style="height: 300px; object-fit:cover"
+      />
+      <h2>Establised in Brighton, 2019</h2>
+    </div>
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script src="js/index.js"></script>
