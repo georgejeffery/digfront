@@ -1,8 +1,15 @@
 body {
-  background-color:#ce3635;
+  background-color: #ce3635;
   text-align: center;
-  color:#fff;
-  padding-top:10em;
+  color: #fff;
+  padding-top: 10em;
 }
 
-* { color:#fff; text-decoration: none;}
+* {
+  color: #fff;
+  text-decoration: none;
+}
+
+.typewriterbox {
+  border: #fff 2px solid;
+}
